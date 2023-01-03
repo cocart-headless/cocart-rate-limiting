@@ -4,7 +4,7 @@
 
 <br>
 
-Enables the rate limiting feature for [CoCart](https://cocart.xyz/?utm_medium=gh&utm_source=github&utm_campaign=readme&utm_content=cocart). It is setup so that it can be installed as a standalone WordPress plugin, or included into CoCart as a Composer Package.
+Enables the rate limiting feature for [CoCart](https://cocart.xyz/?utm_medium=gh&utm_source=github&utm_campaign=readme&utm_content=cocart) that is available in version **4.0** an up. It is setup so that it can be installed as a standalone WordPress plugin, or included into CoCart as a Composer Package.
 
 ## Setup
 
@@ -14,7 +14,7 @@ You can if you want change any of the options via your `wp-config.php` file.
 
 ### Constants
 
-These are the constants to use in your `wp-config.php` to override the default values.
+These are the constants to use in your `wp-config.php` which will override the default values.
 
 ```php
 define( 'COCART_RATE_LIMITING_ENABLED', true );
