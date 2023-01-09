@@ -139,6 +139,22 @@ final class Plugin {
 	 * @return array
 	 */
 	public static function cocart_api_rate_limit_options() {
+		// Specified routes in CoCart will be restricted to 1 request per 60 seconds.
+		$regex_path_patterns = apply_filters( 'cocart_rate_limit_restricted_request_patterns', array(
+			'', // Example: #^/cocart/v2/checkout?#
+		) );
+
+		foreach ( $regex_path_patterns as $regex_path_pattern ) {
+			if ( preg_match( $regex_path_pattern, $GLOBALS['wp']->query_vars['rest_route'] ) ) {
+				return array(
+					'enabled'       => true,
+					'proxy_support' => defined( 'COCART_RATE_LIMITING_PROXY_SUPPORT' ) ? COCART_RATE_LIMITING_PROXY_SUPPORT : false, // enables/disables Proxy support. Default:false,
+					'limit'         => 1,
+					'seconds'       => 60
+				);
+			}
+		}
+
 		return array(
 			'enabled'       => defined( 'COCART_RATE_LIMITING_ENABLED' ) ? COCART_RATE_LIMITING_ENABLED : true, // enables/disables Rate Limiting
 			'proxy_support' => defined( 'COCART_RATE_LIMITING_PROXY_SUPPORT' ) ? COCART_RATE_LIMITING_PROXY_SUPPORT : false, // enables/disables Proxy support. Default:false

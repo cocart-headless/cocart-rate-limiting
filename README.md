@@ -25,6 +25,18 @@ define( 'COCART_RATE_LIMITING_SECONDS', 10 );
 
 [[See guide on Rate Limiting](https://github.com/co-cart/co-cart/blob/dev/docs/rate-limit-guide.md#proxy-standard-support)] for more advanced setup.
 
+### Really restricted
+
+If you want to restrict the rate limit even further to **1 request** per **60 seconds** for specified routes, then you can use this filter `cocart_rate_limit_restricted_request_patterns`.
+
+```php
+add_filter( 'cocart_rate_limit_restricted_request_patterns' function() {
+  return array(
+    '#^/cocart/v2/checkout?#'
+  );
+});
+```
+
 ## License
 
 Released under [GNU General Public License v3.0](http://www.gnu.org/licenses/gpl-3.0.html).
