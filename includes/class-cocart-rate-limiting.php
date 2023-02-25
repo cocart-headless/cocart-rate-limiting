@@ -145,7 +145,7 @@ final class Plugin {
 		) );
 
 		foreach ( $regex_path_patterns as $regex_path_pattern ) {
-			if ( preg_match( $regex_path_pattern, $GLOBALS['wp']->query_vars['rest_route'] ) ) {
+			if ( ! empty( $regex_path_pattern ) && preg_match( $regex_path_pattern, $GLOBALS['wp']->query_vars['rest_route'] ) ) {
 				return array(
 					'enabled'       => true,
 					'proxy_support' => defined( 'COCART_RATE_LIMITING_PROXY_SUPPORT' ) ? COCART_RATE_LIMITING_PROXY_SUPPORT : false, // enables/disables Proxy support. Default:false,
