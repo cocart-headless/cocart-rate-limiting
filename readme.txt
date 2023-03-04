@@ -26,7 +26,7 @@ But if you want, you can change any of the options via your `wp-config.php` file
 
 These are the constants to use in your `wp-config.php` which will override the default values.
 
-```php
+```
 define( 'COCART_RATE_LIMITING_ENABLED', true );
 define( 'COCART_RATE_LIMITING_PROXY_SUPPORT', false );
 define( 'COCART_RATE_LIMITING_LIMIT', 25 );
