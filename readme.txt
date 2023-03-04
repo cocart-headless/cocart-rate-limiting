@@ -81,7 +81,7 @@ This plugin is created by [Sébastien Dumont](https://sebastiendumont.com).
 * WordPress v5.6
 * WooCommerce v4.3
 * PHP v7.3
-* CoCart v2.9.1
+* CoCart v4.0.0
 
 = Recommended Requirements =
 
