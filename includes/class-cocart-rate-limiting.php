@@ -27,7 +27,7 @@ final class Plugin {
 	 *
 	 * @static
 	 */
-	public static $version = '1.0.0';
+	public static $version = '1.0.1';
 
 	/**
 	 * Initiate CoCart Rate Limiting.
@@ -37,12 +37,7 @@ final class Plugin {
 	 * @static
 	 */
 	public static function init() {
-		// Update CoCart add-on counter upon activation.
-		register_activation_hook( COCART_RATE_LIMITING_FILE, array( __CLASS__, 'activate_addon' ) );
-
-		// Update CoCart add-on counter upon deactivation.
-		register_deactivation_hook( COCART_RATE_LIMITING_FILE, array( __CLASS__, 'deactivate_addon' ) );
-
+		// Enables the rate limiting feature for CoCart.
 		add_filter( 'cocart_api_rate_limit_options', array( __CLASS__, 'cocart_api_rate_limit_options' ), 0 );
 
 		// Load translation files.
@@ -89,44 +84,6 @@ final class Plugin {
 	} // END get_path()
 
 	/**
-	 * Runs when the plugin is activated.
-	 *
-	 * Adds plugin to list of installed CoCart add-ons.
-	 *
-	 * @access public
-	 */
-	public static function activate_addon() {
-		$addons_installed = get_option( 'cocart_addons_installed', array() );
-
-		$plugin = plugin_basename( COCART_RATE_LIMITING_FILE );
-
-		// Check if plugin is already added to list of installed add-ons.
-		if ( ! in_array( $plugin, $addons_installed, true ) ) {
-			array_push( $addons_installed, $plugin );
-			update_option( 'cocart_addons_installed', $addons_installed );
-		}
-	} // END activate_addon()
-
-	/**
-	 * Runs when the plugin is deactivated.
-	 *
-	 * Removes plugin from list of installed CoCart add-ons.
-	 *
-	 * @access public
-	 */
-	public static function deactivate_addon() {
-		$addons_installed = get_option( 'cocart_addons_installed', array() );
-
-		$plugin = plugin_basename( COCART_RATE_LIMITING_FILE );
-
-		// Remove plugin from list of installed add-ons.
-		if ( in_array( $plugin, $addons_installed, true ) ) {
-			$addons_installed = array_diff( $addons_installed, array( $plugin ) );
-			update_option( 'cocart_addons_installed', $addons_installed );
-		}
-	} // END deactivate_addon()
-
-	/**
 	 * Enables the rate limiting feature for CoCart.
 	 *
 	 * Either sets the default options or what is configured
@@ -150,7 +107,7 @@ final class Plugin {
 					'enabled'       => true,
 					'proxy_support' => defined( 'COCART_RATE_LIMITING_PROXY_SUPPORT' ) ? COCART_RATE_LIMITING_PROXY_SUPPORT : false, // enables/disables Proxy support. Default:false,
 					'limit'         => 1,
-					'seconds'       => 60
+					'seconds'       => 60,
 				);
 			}
 		}
@@ -173,6 +130,7 @@ final class Plugin {
 	 *      - WP_LANG_DIR/plugins/cocart-rate-limiting-LOCALE.mo
 	 *
 	 * @access public
+	 *
 	 * @static
 	 */
 	public static function load_plugin_textdomain() {

@@ -5,13 +5,11 @@
  * Description: Enables the rate limiting feature for CoCart.
  * Author:      Sébastien Dumont
  * Author URI:  https://sebastiendumont.com
- * Version:     1.0.0
- * Text Domain: cocart-example-package
+ * Version:     1.0.1
+ * Text Domain: cocart-rate-limiting
  * Domain Path: /languages/
  * Requires at least: 5.6
  * Requires PHP: 7.4
- * WC requires at least: 6.4
- * WC tested up to: 7.4
  *
  * @package CoCart Rate Limiting
  */
