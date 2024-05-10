@@ -3,8 +3,8 @@
  * Plugin Name: CoCart - Rate Limiting
  * Plugin URI:  https://cocartapi.com
  * Description: Enables the rate limiting feature for CoCart.
- * Author:      Sébastien Dumont
- * Author URI:  https://sebastiendumont.com
+ * Author:      CoCart Headless, LLC
+ * Author URI:  https://cocartapi.com
  * Version:     1.0.2
  * Text Domain: cocart-rate-limiting
  * Domain Path: /languages/
