@@ -2,7 +2,7 @@
 /**
  * This file is designed to be used to load as package NOT a WP plugin!
  *
- * @version 1.0.1
+ * @version 1.0.2
  * @package CoCart Limit Rating
  */
 
@@ -27,6 +27,9 @@ if ( ! class_exists( 'CoCart\RateLimiting\Plugin', false ) ) {
  * @return cocart_rate_limiting
  */
 if ( ! function_exists( 'cocart_rate_limiting' ) ) {
+	/**
+	 * Initialize CoCart Rate Limiting.
+	 */
 	function cocart_rate_limiting() {
 		return \CoCart\RateLimiting\Plugin::init();
 	}

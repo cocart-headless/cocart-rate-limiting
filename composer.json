@@ -1,7 +1,7 @@
 {
-	"name": "co-cart/cocart-rate-limiting",
+	"name": "cocart-headless/cocart-rate-limiting",
 	"description": "Enables the rate limiting feature for CoCart.",
-	"homepage": "https://cocart.xyz",
+	"homepage": "https://cocartapi.com",
 	"type": "wordpress-plugin",
 	"keywords": [
 		"wordpress",
@@ -36,7 +36,7 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/co-cart/cocart-rate-limiting/issues"
+		"issues": "https://github.com/cocart-headless/cocart-rate-limiting/issues"
 	},
 	"autoload": {
 		"classmap": [
@@ -44,11 +44,11 @@
 		]
 	},
 	"require": {
-		"composer/installers": "2.1.1",
-		"co-cart/cocart-sniffs": "0.0.2"
+		"composer/installers": "^2.0"
 	},
 	"require-dev": {
-		"squizlabs/php_codesniffer": "3.7.2"
+		"cocart-headless/cocart-sniffs": "0.0.3",
+		"automattic/vipwpcs": "^3.0"
 	},
 	"scripts": {
 		"phpcs": [

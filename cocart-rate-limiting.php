@@ -1,11 +1,11 @@
 <?php
-/*
+/**
  * Plugin Name: CoCart - Rate Limiting
- * Plugin URI:  https://cocart.xyz
+ * Plugin URI:  https://cocartapi.com
  * Description: Enables the rate limiting feature for CoCart.
  * Author:      Sébastien Dumont
  * Author URI:  https://sebastiendumont.com
- * Version:     1.0.1
+ * Version:     1.0.2
  * Text Domain: cocart-rate-limiting
  * Domain Path: /languages/
  * Requires at least: 5.6
@@ -35,6 +35,9 @@ if ( ! class_exists( 'CoCart\RateLimiting\Plugin', false ) ) {
  * @return cocart_rate_limiting
  */
 if ( ! function_exists( 'cocart_rate_limiting' ) ) {
+	/**
+	 * Initialize CoCart Rate Limiting.
+	 */
 	function cocart_rate_limiting() {
 		return \CoCart\RateLimiting\Plugin::init();
 	}
