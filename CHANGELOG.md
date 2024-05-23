@@ -1,5 +1,11 @@
 # Changelog for CoCart - Rate Limiting
 
+## v1.0.3 - 23rd May, 2024
+
+### What's Changed?
+
+* Updated link to Rate Limiting Guide.
+
 ## v1.0.2 - 10th May, 2024
 
 ### Compatibility
