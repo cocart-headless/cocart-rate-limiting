@@ -28,7 +28,7 @@ define( 'COCART_RATE_LIMITING_LIMIT', 25 );
 define( 'COCART_RATE_LIMITING_SECONDS', 10 );
 ```
 
-[[See guide on Rate Limiting](https://github.com/co-cart/co-cart/blob/dev/docs/rate-limit-guide.md#proxy-standard-support)] for more advanced setup.
+[[See guide on Rate Limiting](https://cocart.dev/guide/rate-limiting-guide/#h-proxy-standard-support)] for more advanced setup.
 
 ### Really restricted
 
