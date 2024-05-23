@@ -3,7 +3,7 @@
  * This file is designed to be used to load as package NOT a WP plugin!
  *
  * @version 1.0.2
- * @package CoCart Limit Rating
+ * @package CoCart Rate Limiting
  */
 
 defined( 'ABSPATH' ) || exit;
