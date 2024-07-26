@@ -1,7 +1,7 @@
 {
 	"title": "CoCart - Rate Limiting",
 	"name": "cocart-rate-limiting",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"private": false,
 	"contributors": [
 		"sebd86",
@@ -22,7 +22,9 @@
 	"requires_php": "7.4",
 	"tested_up_to": "6.5",
 	"wc_requires": "6.4",
-	"wc_tested_up_to": "8.8",
+	"wc_tested_up_to": "9.1",
+	"cocart_requires": "4.2",
+	"cocart_tested_up_to": "4.3",
 	"license": "GPL-3.0",
 	"copyright": "Copyright (c) 2024, CoCart Headless, LLC",
 	"description": "Enables the rate limiting feature for CoCart.",

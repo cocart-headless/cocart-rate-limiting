@@ -1,5 +1,12 @@
 # Changelog for CoCart - Rate Limiting
 
+## v1.0.4 - 26th July, 2024
+
+### Compatibility
+
+* Tested with WooCommerce v9.1
+* Tested with WordPress v6.6
+
 ## v1.0.3 - 23rd May, 2024
 
 ### What's Changed?

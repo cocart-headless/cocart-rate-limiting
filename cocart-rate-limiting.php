@@ -5,11 +5,13 @@
  * Description: Enables the rate limiting feature for CoCart.
  * Author:      CoCart Headless, LLC
  * Author URI:  https://cocartapi.com
- * Version:     1.0.3
+ * Version:     1.0.4
  * Text Domain: cocart-rate-limiting
  * Domain Path: /languages/
  * Requires at least: 5.6
  * Requires PHP: 7.4
+ * CoCart requires at least: 4.2
+ * CoCart tested up to: 4.3
  *
  * @package CoCart Rate Limiting
  */
