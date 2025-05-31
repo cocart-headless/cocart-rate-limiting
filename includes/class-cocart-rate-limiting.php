@@ -110,7 +110,7 @@ final class Plugin {
 			if ( ! empty( $regex_path_pattern ) && preg_match( $regex_path_pattern, $GLOBALS['wp']->query_vars['rest_route'] ) ) {
 				return array(
 					'enabled'       => true,
-					'proxy_support' => defined( 'COCART_RATE_LIMITING_PROXY_SUPPORT' ) ? COCART_RATE_LIMITING_PROXY_SUPPORT : false, // enables/disables Proxy support. Default:false.
+					'proxy_support' => defined( 'COCART_RATE_LIMITING_PROXY_SUPPORT' ) ? COCART_RATE_LIMITING_PROXY_SUPPORT : false, // Enables/disables Proxy support. Default:false.
 					'limit'         => 1,
 					'seconds'       => 60,
 				);
@@ -118,10 +118,10 @@ final class Plugin {
 		}
 
 		return array(
-			'enabled'       => defined( 'COCART_RATE_LIMITING_ENABLED' ) ? COCART_RATE_LIMITING_ENABLED : true, // enables/disables Rate Limiting.
-			'proxy_support' => defined( 'COCART_RATE_LIMITING_PROXY_SUPPORT' ) ? COCART_RATE_LIMITING_PROXY_SUPPORT : false, // enables/disables Proxy support. Default:false.
-			'limit'         => defined( 'COCART_RATE_LIMITING_LIMIT' ) ? COCART_RATE_LIMITING_LIMIT : 25, // limit of request per timeframe. Default: 25.
-			'seconds'       => defined( 'COCART_RATE_LIMITING_SECONDS' ) ? COCART_RATE_LIMITING_SECONDS : 10, // timeframe in seconds. Default: 10.
+			'enabled'       => defined( 'COCART_RATE_LIMITING_ENABLED' ) ? COCART_RATE_LIMITING_ENABLED : true, // Enables/disables Rate Limiting.
+			'proxy_support' => defined( 'COCART_RATE_LIMITING_PROXY_SUPPORT' ) ? COCART_RATE_LIMITING_PROXY_SUPPORT : false, // Enables/disables Proxy support. Default:false.
+			'limit'         => defined( 'COCART_RATE_LIMITING_LIMIT' ) ? COCART_RATE_LIMITING_LIMIT : 25, // Limit of request per time frame. Default: 25.
+			'seconds'       => defined( 'COCART_RATE_LIMITING_SECONDS' ) ? COCART_RATE_LIMITING_SECONDS : 10, // Time frame in seconds. Default: 10.
 		);
 	} // END cocart_api_rate_limit_options()
 } // END class
