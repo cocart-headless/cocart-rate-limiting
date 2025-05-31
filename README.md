@@ -9,7 +9,7 @@
 	</a>
 </p>
 
-Enables the rate limiting feature for [CoCart](https://cocartapi.com/?utm_medium=gh&utm_source=github&utm_campaign=readme&utm_content=cocart) that is available in **CoCart Plus** and up. It is setup so that it can be installed as a standalone WordPress plugin, or included into CoCart as a Composer Package.
+Enables the rate limiting feature for [CoCart](https://cocartapi.com/?utm_medium=gh&utm_source=github&utm_campaign=readme&utm_content=cocart) that is available in **CoCart Plus** and up.
 
 ## Setup
 
