@@ -2,7 +2,7 @@
 /**
  * This file is designed to be used to load as package NOT a WP plugin!
  *
- * @version 1.0.4
+ * @version 1.0.5
  * @package CoCart Rate Limiting
  */
 

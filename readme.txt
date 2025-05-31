@@ -3,8 +3,8 @@ Contributors: cocartforwc, sebd86
 Tags: woocommerce, rest-api, decoupled, headless, rate-limit
 Requires at least: 5.6
 Requires PHP: 7.4
-Tested up to: 6.6
-Stable tag: 1.0.4
+Tested up to: 6.8
+Stable tag: 1.0.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -85,7 +85,7 @@ Founder of [CoCart Headless, LLC](https://twitter.com/cocartheadless).
 * WordPress v5.6
 * WooCommerce v6.3
 * PHP v7.4
-* CoCart Plus v1.3.0 or CoCart Pro.
+* CoCart Plus v1.3.0 or higher.
 
 = Recommended Requirements =
 

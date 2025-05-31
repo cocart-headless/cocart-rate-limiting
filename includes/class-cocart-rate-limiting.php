@@ -29,7 +29,7 @@ final class Plugin {
 	 *
 	 * @var string
 	 */
-	public static $version = '1.0.4';
+	public static $version = '1.0.5';
 
 	/**
 	 * Initiate CoCart Rate Limiting.
